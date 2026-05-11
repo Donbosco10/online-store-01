@@ -1,0 +1,33 @@
+/* Admin UI - Minimal, modern, mobile-first */
+:root {
+  --primary: #0F172A;
+  --accent: #0369A1;
+  --bg: #F8FAFC;
+  --card-bg: #FFFFFF;
+  --text: #1E293B;
+  --muted: #64748B;
+  --border: #E2E8F0;
+  --radius: 16px;
+  --shadow: 0 4px 24px rgba(30,41,59,0.06);
+  --font-main: 'Inter', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+#admin-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  #admin-app {
+    padding: 0;
+  }
+}
